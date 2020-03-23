@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex justify-center flex-wrap">
+        <div class="bg-red-500"></div>
+        <div class="text-gray-700 text-center my-64">
+            <div id='datetime'></div>
+            <div id="content" class="text-5xl xs:text-xl"></div>
+        </div>
+    </div>
+</body>
+<script src="moment.min.js"></script>
+<script>
+
+    let walkingDateTime = setInterval(datetime, 1000);
+    let greeting = "Good Morning"
+    let name = "Safira"
+    let i = 0;
+    let main = `${greeting}, ${name}`
+    let speed = 50;
+
+    function datetime() {
+        var date = moment();
+        var time = date.format('dddd, MMMM Do YYYY, h:mm:ss A')
+        document.getElementById("datetime").innerHTML = time;
+    }
+
+    function typeWriter() {
+        if (i < main.length) {
+            document.getElementById("content").innerHTML += main.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    
+    typeWriter()
+
+</script>
+
+</html>
