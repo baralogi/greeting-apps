@@ -1,53 +1,5 @@
-.heart {
-  height: 200px;
-  width: 200px;
-  background-color: #f4959b;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: rotate(-45deg);
-  animation-name: beat;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
 
-.heart::after {
-  content: "";
-  height: 200px;
-  width: 200px;
-  background-color: #f4959b;
-  border-radius: 50%;
-  position: absolute;
-  top: 0px;
-  left: 100px;
-}
-
-.heart::before {
-  content: "";
-  height: 200px;
-  width: 200px;
-  background-color: #f4959b;
-  border-radius: 50%;
-  position: absolute;
-  top: -100px;
-  left: 0px;
-}
-
-@keyframes beat {
-  0% {
-    transform: scale(1) rotate(-45deg);
-  }
-
-  50% {
-    transform: scale(0.5) rotate(-45deg);
-  }
-}
-
-/* new */
+/* style */
 
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
@@ -72,12 +24,12 @@ body {
   font-size: 50px;
 }
 
-.area {
-  background: #1a202c;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-  width: 100%;
-  height: 100vh;
-}
+/* .area { */
+  /* background: #1a202c; */
+  /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
+  /* width: 100%;
+  height: 100vh; */
+/* } */
 
 .circles {
   position: absolute;
@@ -94,7 +46,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #a0aec0;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }

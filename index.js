@@ -53,6 +53,8 @@ if (now == 1) {
     submain = `${greetings[1].message}`
     datetime()
     typeWriter()
+
+    document.body.style.backgroundColor = "#edf2f7"
     document.getElementById("music").innerHTML = '<source src="music/Back To You - Selena Gomez.mp3" type="audio/mpeg">'
     document.getElementById("subContent").innerHTML = submain
 
@@ -75,6 +77,8 @@ if (now == 1) {
     submain = `${greetings[0].message}`
     datetime()
     typeWriter()
+
+    document.body.style.backgroundColor = "#edf2f7"
     document.getElementById("music").innerHTML = '<source src="music/Jeremy Zucker & Chelsea Cutler - you were good to me.mp3" type="audio/mpeg">'
     document.getElementById("subContent").innerHTML = submain
 
