@@ -4,7 +4,7 @@ let greetings = [{ greeting: "good morning", message: "have a good activity" },
 { greeting: "good evening", message: "have a nice dream" },
 { greeting: "good night", message: "have a nice dream" }
 ]
-let name = "Bella <3"
+let name = "Kusuma <3"
 let main = null
 let submain = null
 
