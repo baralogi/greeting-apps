@@ -16,7 +16,7 @@ let greetings = [
   { greeting: "good night", message: "have a nice dream" },
 ];
 
-let name = "Nandares";
+let name = "Izza";
 let main = null;
 let submain = null;
 
